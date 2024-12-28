@@ -1,0 +1,152 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #337cc5;
+}
+
+/* Container */
+h1 {
+  text-align: center;
+  color: #343a40;
+  margin-top: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Table styles */
+table {
+  width: 85%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+table th {
+  background-color: #0ccb75;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tr:hover {
+  background-color: #e9ecef;
+  transform: scale(1.02);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+button:first-child {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+button:first-child:hover {
+  background-color: #0056b3;
+}
+
+button:last-child {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Edit form */
+form {
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 30px auto;
+  width: 60%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #343a40;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+}
+
+form button[type="submit"] {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+form button[type="button"] {
+  background-color: #6c757d;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="button"]:hover {
+  background-color: #5a6268;
+}

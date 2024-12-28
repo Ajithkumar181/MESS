@@ -1,0 +1,98 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+nav a {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #555;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+  text-shadow: 0px 2px 8px rgba(0, 123, 255, 0.5);
+}
+
+nav a svg {
+  margin-right: 8px;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover svg {
+  transform: rotate(20deg);
+}
+
+/* Active Link Styling */
+nav a.active {
+  color: #28a745;
+  font-weight: bolder;
+  border-bottom: 2px solid #28a745;
+}
+
+/* Content Area Styling */
+h1, .content {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 404 Page Styling */
+h1 {
+  font-size: 3rem;
+  color: #ff4e50;
+  animation: fadeIn 1s ease-in-out infinite alternate;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+
+  h1, .content {
+    font-size: 1.5rem;
+  }
+}
